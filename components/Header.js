@@ -6,8 +6,6 @@ import Mobile from "./Mobile";
 import { useContext, useEffect, useState } from "react";
 import SideCart from "./SideCart";
 import { Context } from "@/Context/Context";
-import axios from "axios";
-
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -16,7 +14,7 @@ const Header = () => {
 
   useEffect(() => {
     const fetchCategories = async () => {
-      const res = await axios.get("/api/category");
+     // const res = await axios.get("/api/category");
       setCategories(res?.data?.data);
     };
     fetchCategories();

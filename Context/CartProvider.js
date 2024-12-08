@@ -1,5 +1,4 @@
 "use client";
-import axios from "axios";
 import { createContext, useContext, useState } from "react";
 import { Context } from "./Context";
 import toast from "react-hot-toast";

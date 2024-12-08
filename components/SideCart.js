@@ -4,7 +4,6 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { Context } from "@/Context/Context";
 import Image from "next/image";
-import axios from "axios";
 import Button from "@/utils/Button";
 
 const SideCart = ({ setIsCartOpen, isCartOpen }) => {
