@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Category from './app/category/[categories]/Category';  // Relative path
 
 const page = () => {
   return (
