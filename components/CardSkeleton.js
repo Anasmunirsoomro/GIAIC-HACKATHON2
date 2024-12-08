@@ -1,71 +1,49 @@
+import Image from "next/image";
+import Link from "next/link";
 const CardSkeleton = () => {
   return (
-    <div className=" md:flex w-11/12 lg:w-full mx-auto items-center justify-center  p-2 flex-wrap md:flex-nowrap">
-      <div
-        role="status"
-        className="flex items-center justify-center h-40 md:h-56 w-full md:mx-2 my-4 bg-gray-300 rounded-lg animate-pulse 
-        "
-      >
-        <svg
-          className="w-10 h-10 text-gray-200 "
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 20 18"
-        >
-          <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z" />
-        </svg>
-        <span className="sr-only">Loading...</span>
+    <>
+    <div className="md:flex w-11/12 lg:w-full mx-auto items-center justify-center p-2 flex-wrap md:flex-nowrap">
+      <div role="status" className="flex flex-col items-center justify-center h-40 md:h-56 w-full md:mx-2 my-4 bg-gray-300 rounded-lg">
+        <Image
+          src="/latop.jpg"
+          width={400}
+          height={400}
+          objectFit="fill"
+          alt="Laptop image"
+        />
+        <Link href="/blog">
+          <button className="mt-8 px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            Go to Category
+          </button>
+        </Link>
       </div>
-      <div
-        role="status"
-        className="flex items-center justify-center h-40 md:h-56 w-full md:mx-2 my-4 bg-gray-300 rounded-lg animate-pulse 
-        "
-      >
-        <svg
-          className="w-10 h-10 text-gray-200 "
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 20 18"
-        >
-          <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z" />
-        </svg>
-        <span className="sr-only">Loading...</span>
+      <div role="status" className="flex flex-col items-center justify-center h-40 md:h-56 w-full md:mx-2 my-4 bg-gray-300 rounded-lg">
+        <Image
+          src="/laptop-6856557_640.jpg"
+          width={400}
+          height={500}
+        ></Image>
+        <Link href="/products">
+          <button className="mt-8 px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            Go to Category
+          </button>
+        </Link>
       </div>
-      <div
-        role="status"
-        className="flex items-center justify-center h-40 md:h-56 w-full md:mx-2 my-4 bg-gray-300 rounded-lg animate-pulse 
-        "
-      >
-        <svg
-          className="w-10 h-10 text-gray-200 "
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 20 18"
-        >
-          <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z" />
-        </svg>
-        <span className="sr-only">Loading...</span>
+      <div role="status" className="flex flex-col items-center justify-center h-40 md:h-56 w-full md:mx-2 my-4 bg-gray-300 rounded-lg">
+        <Image
+          src="/laptop-1483974_1280.jpg"
+          width={400}
+          height={800}
+        ></Image>
+        <Link href="/products">
+          <button className="mt-8 px-6 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            Go to Category
+          </button>
+        </Link>
       </div>
-      <div
-        role="status"
-        className="flex items-center justify-center h-40 md:h-56 w-full md:mx-2 my-4 bg-gray-300 rounded-lg animate-pulse 
-        "
-      >
-        <svg
-          className="w-10 h-10 text-gray-200 "
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 20 18"
-        >
-          <path d="M18 0H2a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2Zm-5.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm4.376 10.481A1 1 0 0 1 16 15H4a1 1 0 0 1-.895-1.447l3.5-7A1 1 0 0 1 7.468 6a.965.965 0 0 1 .9.5l2.775 4.757 1.546-1.887a1 1 0 0 1 1.618.1l2.541 4a1 1 0 0 1 .028 1.011Z" />
-        </svg>
-        <span className="sr-only">Loading...</span>
-      </div>
-    </div>
+    </div >
+    </>
   );
 };
 
