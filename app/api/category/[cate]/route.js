@@ -1,4 +1,4 @@
-import Category from "@/app/category/[categories]/Category";
+import Category from "@/app/category/[categories]/category";
 import connectDB from "@/db/Database";
 import ClothingProduct from "@/models/Product";
 import { NextResponse } from "next/server";
